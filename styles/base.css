@@ -1,0 +1,89 @@
+:root {
+
+    /* == Colours == */
+    --color-primary: #094BA7;
+    --button-text-color: #FFFF;
+    --text-color: #000;
+
+
+    /* == Heading & Text Sizes == */
+
+    --font-family: 'Helvetica Neue' , Helvetica, Arial, sans-serif;
+
+    --desktop-h1-hero: 3rem;
+    --desktop-h2-hero: 2rem;
+
+    --mobile-h1-hero: 2.5rem;
+    --mobile-h2-hero: 2rem;
+
+    --desktop-h1: 2.5rem;
+    --desktop-h2: 2rem;
+    --desktop-h3: 2rem;
+
+
+    --mobile-h1: 2rem;
+    --mobile-h2: 1.5rem;
+    --desktop-h3: 1rem;
+
+    --desktop-p: 1.5rem;
+    --mobile-p: 1rem;
+
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold:   700;
+
+
+
+    /* == Spacing == */
+    --space-4:   0.25rem;   /*  4px */
+    --space-8:   0.5rem;    /*  8px */
+    --space-12:   0.75rem;   /* 12px */
+    --space-16:   1rem;      /* 16px */
+    --space-24:   1.5rem;    /* 24px */
+    --space-32:   2rem;      /* 32px */
+    --space-48:  3rem;      /* 48px */
+    --space-64:  4rem;      /* 64px */
+
+    --main-desktop: 20rem;
+
+    --section-desktop: 15rem 1.5rem;
+    --section-mobile: 5rem 1.5rem;
+
+
+    /* == Borders == */
+    --raidus-corner: 1.5rem;
+    --radius-pill: 1rem;
+
+    --border-thin:   1px;
+    --border-normal: 2px;
+
+    /* == Shadows == */
+    --shadow-1:  0 1px 2px rgb(0 0 0 / 0.05);
+    --shadow-2:  0 4px 6px rgb(0 0 0 / 0.10);
+    --shadow-3:  0 10px 15px rgb(0 0 0 / 0.15);
+    --shadow-4:  0 20px 25px rgb(0 0 0 / 0.20);
+        
+
+
+}
+
+body {
+	background-color: #FAFAFA;
+}
+
+ul,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family);
+}
+
+h2 {
+   color: var(--color-primary);
+   
+}
