@@ -9,6 +9,8 @@
 .hero h1 {
     font-size: var(--mobile-h1);
     text-transform: uppercase;
+    color: var(--color-primary);
+    
 
     
 }
@@ -16,12 +18,13 @@
 .hero h2 {
     font-size: var(--mobile-h2);
     font-weight: var(--font-normal);
+
 }
 
 @media (min-width: 50em) {
 
 
-.hero h1 {
+.hero h1 { 
     font-size: var(--desktop-h1);
     text-transform: uppercase;
 
@@ -44,6 +47,9 @@
 .about-cta {
     display: inline-block;
     margin-top: 2rem;
+    background-color: var( --color-primary);
+    color: var(--color-base);
+    padding: 1.5rem;
 }
 
 @media (min-width: 50em) {
@@ -55,6 +61,11 @@
     align-items: start;
 }
 
+.about-me-intro h2{
+     margin-top: 0;
+     margin-bottom: var(--space-24) ;
+}
+
 .about-me-intro h2,
 .about-me-intro p {
     grid-column: 2fr;
@@ -62,6 +73,7 @@
 
 .about-me-intro p {
     max-width: 30ch;
+    margin-top: 0;
 }
 
 .about-me-intro .about-cta {
@@ -73,7 +85,6 @@
 .about-cta{
     margin-top: 10rem;
     margin-right: 10rem;
-    background-color: var( --color-primary);
     padding: 2rem;
 }
 }
@@ -89,9 +100,10 @@
 }
 
 .featured-info-background {
-    padding: var(--space-24);
+    padding: var(--space-16) var(--space-24) var(--space-32);
+   
+   
 }
-
 .card-left h3{
     margin-top: 0;
 }
@@ -106,5 +118,80 @@
 .tech-pills {
     display: flex;
     gap: var(--space-4);
+}
 
+.work-highlight {
+    background-color:var(--color-base);
+    padding-bottom: var(--space-24);
+    box-shadow: var(--shadow-2);
+}
+
+.work-highlight.active{
+    border-left: var(--border-normal) solid var(--color-primary);
+}
+
+.featured-work-name{
+    padding-top:var(--space-16);
+    margin-bottom: 0;
+    font-weight:  var(--font-medium);
+}
+
+.work-highlight p{
+    margin-top: var(--space-4);
+    
+}
+
+.featured-work-name,
+.work-highlight a{
+    text-transform: uppercase;
+}
+
+.featured-work-name,
+.work-highlight p,
+.work-highlight a {
+    margin-left: var(--space-16);  
+}
+
+.works-list-scroll a{
+    display: block;
+    margin-top: var(--space-16);
+}
+
+@media (min-width: 50em){
+
+    .featured-works-img img {
+        width: 100%;
+    }
+
+    .featured-info-background{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .featured-works-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+      
+    }
+
+    .works-list-scroll {
+        display: grid;
+        gap: var(--space-16);
+        align-self: stretch;
+    }
+
+    .works-list-scroll a{
+        text-align: right;
+    }
+    .featured-work-name{
+        font-size: 2.5rem;
+        padding-top: 0;
+    }
+
+    .work-highlight p{
+        font-size: 1.3rem;
+    }
 }

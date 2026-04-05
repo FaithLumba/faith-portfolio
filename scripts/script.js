@@ -9,3 +9,13 @@ hamburger.addEventListener('click', function() {
    
 });
 
+const workHighlights = document.querySelectorAll('.work-highlight');
+
+workHighlights.forEach(function(highlight) {
+    highlight.addEventListener('click', function() {
+        workHighlights.forEach(function(eachHighlight) {
+            eachHighlight.classList.remove('active');
+        });
+        highlight.classList.add('active');
+    });
+});
