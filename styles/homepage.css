@@ -1,0 +1,84 @@
+/* Hero Section
+--------------------------------------------- */
+.hero{
+    text-align:center;
+       
+}
+
+
+.hero h1 {
+    font-size: var(--mobile-h1);
+    text-transform: uppercase;
+
+    
+}
+
+.hero h2 {
+    font-size: var(--mobile-h2);
+    font-weight: var(--font-normal);
+}
+
+@media (min-width: 50em) {
+
+
+.hero h1 {
+    font-size: var(--desktop-h1);
+    text-transform: uppercase;
+
+    
+}
+
+.hero h2 {
+    font-size: var(--desktop-h2);
+    font-weight: var(--font-normal);
+}
+
+.hero p {
+    font-size: var( --desktop-p);    
+}
+
+}
+
+/* Intro About Section
+--------------------------------------------- */
+.about-cta {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+@media (min-width: 50em) {
+
+   .about-me-intro {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem 2rem;
+    align-items: start;
+}
+
+.about-me-intro h2,
+.about-me-intro p {
+    grid-column: 2fr;
+}
+
+.about-me-intro p {
+    max-width: 30ch;
+}
+
+.about-me-intro .about-cta {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+}
+
+.about-cta{
+    margin-top: 10rem;
+    margin-right: 10rem;
+    background-color: var( --color-primary);
+    padding: 2rem;
+}
+}
+
+/* Featured Works Section
+--------------------------------------------- */
+
+
