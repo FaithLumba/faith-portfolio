@@ -2,7 +2,7 @@
 
     /* == Colours == */
     --color-primary: #094BA7;
-    --button-text-color: #FFFF;
+    --color-base: #FFFF;
     --text-color: #000;
 
 
@@ -12,12 +12,12 @@
 
     --desktop-h1: 3.5rem;
     --desktop-h2: 3rem;
-    --desktop-h3: 2.5em;
+    --desktop-h3: 2.5rem;
 
 
-    --mobile-h1: 2.5rem;
-    --mobile-h2: 2rem;
-    --desktop-h3: 1rem;
+    --mobile-h1: 2.8rem;
+    --mobile-h2: 2.3rem;
+    --mobile-h3: 2rem;
 
     --desktop-p: 1.5rem;
     --mobile-p: 1.2rem;
@@ -45,7 +45,7 @@
 
 
     /* == Borders == */
-    --raidus-corner: 1.5rem;
+    --radius-corner: 1.5rem;
     --radius-pill: 1rem;
 
     --border-thin:   1px;
@@ -68,6 +68,10 @@
 
 h2{
     font-size: var(--mobile-h2);
+}
+
+h3 {
+    font-size: var(--mobile-h3);
 }
 
 p {
@@ -104,6 +108,10 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+ul {
+    padding: 0;
 }
 
 .sidebar {
@@ -260,7 +268,7 @@ li{
         left: 0;
         visibility: visible;
         width: 10rem;
-        box-shadow: var(--shadow-2);
+        box-shadow: var(--shadow-3);
     }
 
     .main-logo {
@@ -270,13 +278,9 @@ li{
     main {
         margin-left: 20rem;
     }
-
-  
-
-    
-
 }
 
-footer {
+footer p {
     text-align:center;
+    font-size: 1rem;
 }

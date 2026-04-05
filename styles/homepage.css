@@ -81,4 +81,30 @@
 /* Featured Works Section
 --------------------------------------------- */
 
+.featured-project-card {
+    background-color: var(--color-base);
+    border-radius: var(--radius-corner);  
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+}
 
+.featured-info-background {
+    padding: var(--space-24);
+}
+
+.card-left h3{
+    margin-top: 0;
+}
+
+.pill {
+    background-color: var(--color-primary);
+    color: var(--color-base);
+    padding: var(--space-8);
+    border-radius: var(--radius-pill);
+}
+
+.tech-pills {
+    display: flex;
+    gap: var(--space-4);
+
+}
